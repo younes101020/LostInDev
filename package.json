@@ -1,0 +1,22 @@
+{
+  "name": "electra---project",
+  "version": "1.0.0",
+  "description": "Realtime chat app with rooms",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "node server"
+  },
+  "author": "Younes Fakallah",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3",
+    "moment": "^2.29.1",
+    "node": "^17.7.1",
+    "socket.io": "^4.4.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

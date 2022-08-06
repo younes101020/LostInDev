@@ -7,7 +7,7 @@
 }
 
 ::-webkit-scrollbar {
-	width: 1em;
+	width: .5rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -15,15 +15,15 @@
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #560090;
+	background: #ffffff;
 	border-radius: 15px;
 }
 
 body {
-	height: 100vh;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	background-image: url(../img/fond.svg);
+	background-color: #140021;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -76,7 +76,7 @@ a {
 /* Chat Page */
 
 .c-wrapper {
-	margin: 7vw 0 0 0;
+	margin: 3.5rem 0 0 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -174,7 +174,7 @@ a {
 }
 
 .divider {
-	margin: 10vw 10vw 0 10vw;
+	margin: 3.5rem;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -212,10 +212,6 @@ a {
 @media (max-width: 850px) {
 	html, body {
 		overflow-x: hidden;
-	}
-	
-	body {
-		position: relative;
 	}
 	
 	.tl-wrapper {
@@ -276,7 +272,7 @@ a {
 }
 
 .join-main input[type='text'] {
-	box-shadow: 10px 10px 5px #9900ff;
+	box-shadow: 10px 10px 0 #9900ff;
 	outline: none;
 	font-size: 16px;
 	padding: 5px;
@@ -288,7 +284,7 @@ a {
 .join-main select {
 	border: none;
 	outline: none;
-	box-shadow: 10px 10px 5px #9900ff;
+	box-shadow: 10px 10px 0 #9900ff;
 	text-align: center;
 	-webkit-appearance: none;
 	font-size: 16px;
@@ -297,15 +293,18 @@ a {
 	width: 100%;
 }
 
-#minwrap {
-	display: flex;
-	justify-content: center;
-}
-
 .join-main .btn {
-	background: transparent;
 	margin-top: 20px;
 	text-align: center;
+	box-shadow: 7px 7px 0 #9900ff;
+	border-radius: 100vw;
+	padding: 5px;
+    height: 40px;
+    width: 100%;
+}
+
+.fa-circle-right {
+	position: absolute;
 }
 
 @media (max-width: 700px) {

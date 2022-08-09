@@ -214,14 +214,29 @@ a {
 		overflow-x: hidden;
 	}
 	
+	.wrapper {
+		margin: 0 3rem;
+		width: fit-content;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.tr-wrapper {
+	        order: 1;
+	}
+	
 	.tl-wrapper {
-		justify-self: center;
+		order: 2;
 		align-self: center;
 	}
-
+	
+	.bl-wrapper {
+		order: 3;
+	}
+	
 	.br-wrapper {
-		justify-self: center;
 		align-self: center;
+		order: 4;
 	}
 
 	.exp {
@@ -231,7 +246,7 @@ a {
 
 @media (max-width: 694px) {
 	.exp {
-		font-size: 2vw !important;
+		font-size: 1rem !important;
 	}
 }
 
